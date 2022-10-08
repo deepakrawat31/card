@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+    --mobile-w: 375px;
+    --desktop-w: 1440px;
+
+    --card-bg: hsl(0, 0%, 100%);
+    --card-text: hsl(212, 45%, 89%);
+    --bg: hsl(220, 15%, 55%);
+    --card-heading: hsl(218, 44%, 22%);
+
+    --fs-para: 15px;
+
+    --ff-card: 'Outfit', sans-serif;
+
+    --fw-400: 400;
+    --fw-700: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background: var(--bg);
+    height: 100vh;
+    width: 100vw;
+    /* width: var(--desktop-w); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card {
+    background: var(--card-bg);
+    border-radius: 15px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.img img {
+    border-radius: 10px;
+    width: 270px;
+    margin: 15px 0 10px 0;
+}
+
+.text {
+    font-family: var(--ff-card);
+    margin: 5px 30px 40px 30px;
+}
+
+.text h1 {
+    font-weight: var(--fw-700);
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.text p {
+    font-weight: var(--fw-400);
+    font-size: var(--fs-para);
+    margin-top: 15px;
+}
